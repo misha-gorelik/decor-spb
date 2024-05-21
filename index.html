@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Samokhvalova Design</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__nav">
+            <div class="header-nav__logo">
+              <img src="./img/Logo.svg" alt="Logo" />
+            </div>
+            <div class="header-nav__menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#!" class="menu__link">Главная</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#!" class="menu__link">Сервисы</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#!" class="menu__link">Стоимость</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#!" class="menu__link">Портфолио</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#!" class="menu__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header__offer">
+            <div class="offer__body">
+              <h1 class="offer__title">Воплоти в жизнь дизайн своей мечты</h1>
+              <p class="offer__text">
+                Для нас дизайн - это сочетание красоты и функциональности, это
+                игра света и цвета, это то, что заставляет чувствовать себя как
+                дома! <br /><br />Забудьте о том, что было раньше и откройте
+                себе новый мир комфорта и стиля. Навсегда.
+              </p>
+              <div class="btn-container">
+                <div class="hero__btn btn">Получить консультацию</div>
+              </div>
+              <div class="header-feature feature">Стиль</div>
+            </div>
+            <div class="offer__img">
+              <img src="./img/hero-img.jpg" alt="Заказать дизайн" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="service">
+          <div class="service__container">
+            <h2 class="service__title title">Сервисы</h2>
+            <p class="service__text text">
+              Достаточно лишь идеи, чтобы мы смогли разработать и воссоздать
+              интерьер от А до Я
+            </p>
+            <div class="service__body services">
+              <div class="services__item">
+                <div class="services-item__img">
+                  <img src="./img/services01.svg" alt="service01" />
+                </div>
+                <div class="services-item__title">Визуализация</div>
+                <div class="services-item__text">
+                  От эскиза до фотореалистичной трехмерной визуализации вашей
+                  будущей квартиры
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services-item__img">
+                  <img src="./img/services02.svg" alt="service02" />
+                </div>
+                <div class="services-item__title">Подбор материалов</div>
+                <div class="services-item__text">
+                  Мы сами найдем все материалы и элементы декора, чтобы
+                  реализовать ваши идеи интерьера в реальности
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services-item__img">
+                  <img src="./img/services03.svg" alt="service03" />
+                </div>
+                <div class="services-item__title">Ремонт</div>
+                <div class="services-item__text">
+                  Профессиональные маляры, электрики, слесари и сборщики к вашим
+                  услугам, чтобы сделать качественный ремонт
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services-item__img">
+                  <img src="./img/services04.svg" alt="service04" />
+                </div>
+                <div class="services-item__title">Колорист</div>
+                <div class="services-item__text">
+                  Профессиональный подбор цвета и создание уникальной палитры,
+                  которая понравится именно вам. При заказе ремонта, услуги
+                  колориста в подарок
+                </div>
+              </div>
+            </div>
+            <div class="feature service-feature">Удобство</div>
+          </div>
+        </section>
+        <section class="price">
+          <div class="price__container">
+            <h2 class="price__title title">Цена</h2>
+            <div class="price__text text">
+              Узнайте предварительную стоимость услуг всего в несколько кликов
+            </div>
+
+            <div class="price__body">
+              <div class="price-body__value">
+                <div class="value__tabs">
+                  <div class="value-tab__main">Ремонт</div>
+                  <input
+                    type="checkbox"
+                    id="tab02"
+                    class="value-tab__additional"
+                  /><label for="tab01" class="value-tab__label"
+                    >Визуализация +</label
+                  >
+                  <input
+                    type="checkbox"
+                    id="tab03"
+                    class="value-tab__additional"
+                  /><label for="tab01" class="value-tab__label"
+                    >Подбор материалов +</label
+                  >
+                </div>
+                <div class="valeu__inputs">
+                  <div class="inputs__area">
+                    <div class="input__item" id="area1">
+                      <label for="area" class="input-area-label"
+                        >Площадь помещения</label
+                      >
+                      <input
+                        type="number"
+                        class="input-area"
+                        step="1"
+                        min="1"
+                        max="999"
+                        value="50"
+                        id="areaCoef"
+                      />
+                    </div>
+                    <div class="input__item" id="area2">
+                      <label for="area" class="input-area-label"
+                        >Количество комнат</label
+                      >
+                      <input
+                        type="number"
+                        class="input-area"
+                        step="1"
+                        min="1"
+                        max="99"
+                        value="2"
+                        id="roomsCoef"
+                      />
+                    </div>
+                    <div class="input__item" id="area3">
+                      <label for="area" class="input-area-label"
+                        >Тип помещения</label
+                      >
+                      <select class="input-area" id="typeCoef">
+                        <option value="flat">Квартира</option>
+                        <option value="office">Офис</option>
+                        <option value="shop">Магазин</option>
+                        <option value="wearhouse">Склад</option>
+                      </select>
+                    </div>
+                    <div class="input__item" id="area4">
+                      <label for="area" class="input-area-label"
+                        >Премиальность материалов</label
+                      >
+                      <select class="input-area" id="premiumCoef">
+                        <option value="premium">Премиум</option>
+                        <option value="econom">Эконом</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="inputs__checkboxes">
+                    <div class="checkbox__item">
+                      <input
+                        type="checkbox"
+                        id="check1"
+                        class="checkbox__input"
+                        checked
+                      /><label for="check1">
+                        <div class="custom-checkbox"></div>
+                        Объект за пределами КАД</label
+                      >
+                    </div>
+                    <div class="checkbox__item">
+                      <input
+                        type="checkbox"
+                        id="check2"
+                        class="checkbox__input"
+                      /><label for="check2"
+                        ><div class="custom-checkbox"></div>
+                        Только отделка</label
+                      >
+                    </div>
+                    <div class="checkbox__item">
+                      <input
+                        type="checkbox"
+                        id="check3"
+                        class="checkbox__input"
+                      /><label for="check3"
+                        ><div class="custom-checkbox"></div>
+                        Самостоятельная закупка</label
+                      >
+                    </div>
+                    <div class="checkbox__item">
+                      <input
+                        type="checkbox"
+                        id="check4"
+                        class="checkbox__input"
+                      /><label for="check4"
+                        ><div class="custom-checkbox"></div>
+                        Услуги колориста</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="value__summury">
+                  <div class="value__btn btn">Расчитать стоимость</div>
+                  <div class="value__cost">
+                    <div class="cost__title">Итого:</div>
+                    <div class="cost__value">..... руб.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="price-body__img">
+                <img src="./img/price-img.jpg" alt="price" />
+              </div>
+            </div>
+            <div class="price-feature feature">Выгода</div>
+          </div>
+        </section>
+        <section class="works">
+          <div class="works__container">
+            <div class="works-feature feature">Вдохновение</div>
+            <h2 class="price__title title">Наши работы</h2>
+            <p class="service__text text">
+              Мы не просим поверить нам наслово - взгляните на наше портфолио
+            </p>
+            <div class="works__b-a">
+              <img src="./img/b-a.svg" alt="Move for changes">
+            </div>
+
+            <!-- Slider main container
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work1.jpeg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work2.jpeg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work3.jpg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work4.jpg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work5.jpg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work6.jpg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work7.jpg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work8.jpg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work9.jpg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work10.jpg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-img">
+                      <img src="./img/work11.jpg" alt="Work1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+
+          <div class="banner-wrapper" id="banner-wrapper">
+            <div class="banner">
+                <div class="banner-content">
+                    <img src="./img/test1.jpg">
+                </div>
+            </div>
+            <div class="banner dev">
+                <div class="banner-content">
+                    <img src="./img/test2.jpg">
+                </div>
+            </div>
+        </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="contacts__header">
+            <div class="footer-feature feature">Петербург</div>
+            <h2 class="footer__title title">Связаться с нами</h2>
+            <p class="footer__text text">
+              Мы готовы ответить Вам в любое удобное рабочее время
+            </p>
+          </div>
+          <div class="contacts__body">
+            <div class="contacts-map">
+              <div id="map"></div>
+              <script src="https://api-maps.yandex.ru/2.1/?apikey=42526064-b8a5-494e-a844-0035fa44db4c&lang=ru_RU"></script>
+              <script>
+                ymaps.ready(init);
+                function init() {
+                  var myMap = new ymaps.Map("map", {
+                    center: [55.76, 37.64], // координаты центра карты
+                    zoom: 10, // масштаб карты
+                  });
+                }
+              </script>
+            </div>
+            <div class="contacts-data">
+              <div class="contacts_title">Телефон:</div>
+              <div class="contacts_info">+7 (911) 246-28-45</div>
+
+              <div class="contacts_title">Почта:</div>
+              <div class="contacts_info">lg@flat-design.ru</div>
+
+              <div class="contacts_title">Адрес:</div>
+              <div class="contacts_info">Ул. Пушкина, д. Колотушкина 12</div>
+              <div class="contacts_title">Или нажми сюда...</div>
+              <button class="btn contacts-btn">И мы позвоним сами</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright">
+        <p>&copy; Flat Design 2023</p>
+        <div class="footer-lamp">
+          <img src="./img/lamp.png" alt="lamp" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+

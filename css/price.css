@@ -1,0 +1,226 @@
+.price {
+    background: linear-gradient(151deg, #dbeaf2 1.28%, #bcd7e8 100%);
+    padding-bottom: 80px;
+}
+.price__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.price__title {
+    padding: 80px 15px 0;
+}
+
+.price__body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 25px;
+}
+.value__tabs {
+    margin-top: 23px;
+    margin-bottom: 93px;
+    display: flex;
+    gap: 30px;
+}
+
+.value-tab__additional {
+    display: none;
+}
+.value-tab__additional + label {
+    cursor: pointer;
+    color: #34454d;
+    font-size: 24px;
+    font-weight: 300;
+    z-index: 100;
+}
+.value-tab__main,
+.value-tab__additional:checked + label {
+    color: #34454d;
+    font-size: 24px;
+    font-weight: 500;
+}
+.valeu__inputs {
+    display: flex;
+    gap: 35px;
+}
+.inputs__area {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+.input__item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.input-area-label {
+    color: #34454d;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.input-area {
+    background: rgba(255, 255, 255, 0.37);
+    width: 280px;
+    height: 40px;
+    flex-shrink: 0;
+
+    text-align: right;
+    font-family: Raleway;
+    color: #34454d;
+    font-size: 30px;
+    font-weight: 300;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.inputs__checkboxes {
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+.checkbox__input {
+    display: none;
+}
+.checkbox__input:checked + label > .custom-checkbox {
+    background-image: url(../img/check.svg);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+.custom-checkbox {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.37);
+}
+
+.checkbox__item > label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    color: #34454d;
+    font-size: 21px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.value__summury {
+    display: flex;
+    gap: 35px;
+}
+.value__btn {
+    flex: 0 0 280px;
+    padding: 12px 50px;
+    text-align: center;
+}
+.value__cost {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.cost__title {
+    color: rgba(52, 69, 77, 0.13);
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 900;
+
+    position: absolute;
+    top: 10px;
+}
+.cost__value {
+    width: 300px;
+    color: #34454d;
+    font-family: Raleway;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: right;
+
+    position: absolute;
+    right: 0px;
+    top: 35px;
+}
+.price-body__img img {
+    display: block;
+    height: 500px;
+}
+
+.price-body__img {
+    width: 370px;
+    position: relative;
+    z-index: 0;
+}
+.price-body__img::after,
+.price-body__img::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(129, 117, 104, 0.54);
+    box-shadow: 4px 4px 10px 0px rgba(52, 69, 77, 0.24);
+}
+.price-body__img::before {
+    bottom: -46px;
+    right: -75px;
+}
+.price-body__img::after {
+    bottom: -26px;
+    right: -41px;
+}
+
+/* .price-feature {
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+#area1 > .input-area {
+    padding-right: 60px;
+}
+#area1 {
+    position: relative;
+}
+#area1::before {
+    content: "кв.м.";
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+
+    font-family: Raleway;
+    color: #34454d;
+    font-size: 20px;
+    font-weight: 300;
+}
+#area2 > .input-area {
+    padding-right: 68px;
+}
+#area2 {
+    position: relative;
+}
+#area2::before {
+    content: "комн.";
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+
+    font-family: Raleway;
+    color: #34454d;
+    font-size: 20px;
+    font-weight: 300;
+}
+#area3 > .input-area,
+#area4 > .input-area {
+    padding-right: 15px;
+}

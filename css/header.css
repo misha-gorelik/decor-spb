@@ -1,0 +1,81 @@
+.header {
+    background: rgb(206, 199, 188);
+    background: linear-gradient(324deg, rgba(206, 199, 188, 1) 0%, rgba(233, 223, 209, 1) 100%);
+    width: 100%;
+
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo {
+    position: relative;
+    z-index: 5;
+}
+
+.menu__list {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #817568;
+}
+
+.menu__link {
+    color: #817568;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+/* Offer  */
+
+.header__offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+
+.offer__title {
+    color: #34454d;
+    font-size: 45px;
+    font-weight: 900;
+    max-width: 522px;
+}
+.offer__text {
+    max-width: 350px;
+    margin-top: 33px;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.349;
+    font-weight: 300;
+}
+.offer__img {
+    width: 589px;
+    position: relative;
+    z-index: 0;
+}
+.offer__img::after,
+.offer__img::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(129, 117, 104, 0.54);
+    box-shadow: 4px 4px 10px 0px rgba(129, 117, 104, 0.23);
+}
+.offer__img::before {
+    bottom: -46px;
+    right: -75px;
+}
+.offer__img::after {
+    bottom: -26px;
+    right: -41px;
+}
